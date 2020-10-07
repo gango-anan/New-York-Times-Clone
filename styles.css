@@ -1,12 +1,76 @@
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 html {
   width: 100%;
-  height: 100%;
+  height: 2500px;
 }
+
 body{
+  margin: 0;
   width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #e2e2e2;
+  background: white;
+  z-index: 10;
+}
+
+.style-button {
+  background: #567b95;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+}
+
+.custom-font-size {
+  font-size: 1.1875rem;
+}
+
+.style-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.menu-search-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+}
+
+.main-title {
+  font-weight: bold;
+}
+
+.main-title a:hover {
+  text-decoration: underline;
+}
+
+.logo img{
+  max-width: 225px;
+  max-height: 31px;
 }
