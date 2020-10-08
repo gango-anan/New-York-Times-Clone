@@ -10,9 +10,18 @@ body{
   margin: 0;
   width: 100%;
   height: 100%;
-  padding: 2.8rem;
-  border: 3px solid grey;
-  display: grid
+  padding-top: 2.8rem;
+  /* border: 3px solid grey; */
+  display: grid;
+  /* grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto auto 100px; */
+  grid-gap: 5px;
+  grid-template-areas:  "article-start article-start article-start"
+                        "side-left main-center side-right"
+                       /* "side-left main-center side-right" */
+                        "lower-nav lower-nav lower-nav"
+                        "footer footer footer";
+ 
 }
 
 .main-header{
@@ -76,8 +85,22 @@ body{
   max-height: 31px;
 }
 
-.main-content {
-  margin-bottom: 100px;
+.article-head {
+  grid-area: article-start;
+  width: 70%;
+  margin: auto;
+}
+
+.article-title {
+  width: 60%;
+  margin: auto;
+}
+
+.article-head > .article-title > h1 {
+  font-size: 35px;
+  font-style: italic;
+  text-align: left;
+  
 }
 
 
@@ -90,6 +113,7 @@ body{
   border-top: 2px solid #e2e2e2;
   width: 90%;
   margin: auto;
+  grid-area: lower-nav;
 }
 
 .lower-navigation {
@@ -136,6 +160,7 @@ body{
 .footer-area {
   border-top: 1px solid #e2e2e2;
   color: gray;
+  grid-area: footer;
 }
 
 .footer-area ul, .lower-nav-links ul {
