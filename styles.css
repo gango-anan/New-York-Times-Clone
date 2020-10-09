@@ -13,7 +13,7 @@ body{
   height: 100%;
   padding-top: 2.8rem;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 28% 44% 28%;
   grid-template-rows: auto;
   grid-gap: 5px;
   grid-template-areas:  "article-start article-start article-start"
@@ -74,12 +74,12 @@ body{
   font-weight: bold;
 }
 
-.main-title a, .lower-nav-header a, .lower-nav-links a, .footer-links a, .more a  {
+.main-title a, .lower-nav-header a, .lower-nav-links a, .footer-links a, .more a, .center-p a, .edspick a  {
   text-decoration: none;
   color: inherit;
 }
 
-.main-title a:hover, .footer-links a:hover, .lower-nav-links a:hover, .more-title a:hover  {
+.main-title a:hover, .footer-links a:hover, .lower-nav-links a:hover, .more-title a:hover, .edspick a:hover  {
   border-bottom: 1px solid currentColor;
 }
 
@@ -107,8 +107,90 @@ body{
   
 }
 
+.article-head .rick {
+  color: gray;
+}
+
+.edspick {
+  grid-area: side-right;
+  width: 65%;
+  margin: auto;
+  font-size: 14px;
+}
+
+.edspick hr {
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+}
+
+.edspick img{
+  max-width: 75px;
+  max-height: 75px;
+  margin: 10px 10px 10px 0;
+}
+
+.edpic1, .edpic2, .edpic3 {
+  display: flex;
+  align-items: center;
+}
+
 .main-content {
   grid-area: article-area;  
+}
+
+.main-content .author {
+  font-weight: bold;
+}
+
+.main-content .author a {
+  text-decoration: none;
+  border-bottom: 1.5px solid #e2e2e2;
+  color: inherit;
+}
+
+.main-content .author a:hover {
+  border: 0;
+}
+
+.main-content .author-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content .author-date ul, .comments ul {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  cursor: pointer;
+}
+
+.main-content hr {
+  width: 20%;
+  height: 1px;
+  background-color: #e2e2e2;
+  border: none;
+  margin: 20px auto;
+}
+
+.main-content .center-p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.inline-links, .center-p a {
+  color: #3280bf;
+}
+
+.inline-links:hover {
+  text-decoration: none;
 }
 
 .theory-inflation-section {
@@ -117,8 +199,129 @@ body{
   margin: auto;
 }
 
+.theory-inflation-section div>p>span {
+  font-weight: bold;
+}
+
+.fig-container {
+  width: 100%;
+  position: relative;
+  font-size: 13px;
+}
+
+.fig-container figure {
+  width: 100%;
+  margin: auto;
+}
+
+.hr-author hr {
+  height: 1px;
+  background-color: black;
+  width: 15%;
+  margin: 0 85% 0 0;
+  border: none;
+}
+
+.inf1 {
+  position: absolute;
+  width: 24%;
+  left: 0;
+  top: 8rem;
+}
+
+.inf2 {
+  position: absolute;
+  width: 24%;
+  left: 25%;
+  top: 8rem;
+}
+
+.inf3 {
+  position: absolute;
+  width: 24%;
+  right: 25%;
+  top: 8rem;
+}
+
+.inf4 {
+  position: absolute;
+  width: 24%;
+  right: 0;
+  top: 8rem;
+}
+
+.inf5 {
+  position: absolute;
+  width: 24%;
+  left: 0;
+  bottom: 2rem;
+}
+
+.inf6 {
+  position: absolute;
+  width: 24%;
+  left: 25%;
+  bottom: 1rem;
+}
+
+.inf7 {
+  position: absolute;
+  width: 24%;
+  right: 25%;
+  bottom: 1rem;
+}
+
+.inf8 {
+  position: absolute;
+  width: 24%;
+  right: 0;
+  bottom: 1rem;
+}
+
 .main-content2 {
   grid-area: article-area2;
+}
+
+.main-content2 figure, .article-head figure{
+  width: 100%;
+  margin: auto;
+  color: gray;
+}
+
+.end-of-article {
+  font-size: 14px;
+  color: gray;
+  text-align: left;
+}
+
+.end-of-article a{
+  color: gray;
+}
+
+.end-of-article a:hover {
+  text-decoration: none;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.comments button{
+  width: 55%;
+}
+
+.comments ul {
+  width: 25%;
+}
+
+.main-content p, .main-content2 p {
+  font-size: 20px;
+  text-align: left;
 }
 
 /* More Section */
@@ -134,7 +337,7 @@ body{
   border-top: 1px solid black;
   display: grid;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(9, auto);
   grid-gap: 0 5px;
   grid-template-areas:  "sec-title sec-title sec-title" 
                         "pic1 pic2 pic3"
@@ -395,7 +598,7 @@ body{
   width: 100%;
 }
 
-.lower-nav-links ul, .footer-area ul {
+.lower-nav-links ul, .footer-area ul, .author-date ul, .comments ul {
   list-style: none;
   padding: 0;
 }
