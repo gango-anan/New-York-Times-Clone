@@ -77,7 +77,7 @@ body{
   font-weight: bold;
 }
 
-.main-title a, .lower-nav-header a, .lower-nav-links a, .footer-links a, .more a, .center-p a, .edspick a, .footer-expand-container a  {
+.main-title a, .lower-nav-header a, .lower-nav-links a, .footer-links a, .more a, .center-p a, .edspick a, .footer-expand-container a, .menu-search-title a  {
   text-decoration: none;
   color: inherit;
 }
