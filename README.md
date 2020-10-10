@@ -41,7 +41,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./License.md) licensed.
+This project is [MIT](https://github.com/gango-anan/New-York-Times-Clone/blob/space-ripples-page/LICENSE) licensed.
 
 
 
