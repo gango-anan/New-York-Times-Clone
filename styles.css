@@ -7,7 +7,7 @@ html {
   width: 100%;
 }
 
-body{
+body {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -17,16 +17,17 @@ body{
   grid-template-columns: 28% 44% 28%;
   grid-template-rows: auto;
   grid-gap: 5px;
-  grid-template-areas:  "article-start article-start article-start"
-                        "side-left article-area side-right"
-                        "theory-inflation theory-inflation theory-inflation"
-                        "side-left2 article-area2 side-right2"
-                        "more-section more-section more-section"
-                        "lower-nav lower-nav lower-nav"
-                        "footer footer footer"
+  grid-template-areas: 
+    "article-start article-start article-start"
+    "side-left article-area side-right"
+    "theory-inflation theory-inflation theory-inflation"
+    "side-left2 article-area2 side-right2"
+    "more-section more-section more-section"
+    "lower-nav lower-nav lower-nav"
+    "footer footer footer";
 }
 
-.main-header{
+.main-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -77,16 +78,29 @@ body{
   font-weight: bold;
 }
 
-.main-title a, .lower-nav-header a, .lower-nav-links a, .footer-links a, .more a, .center-p a, .edspick a, .footer-expand-container a, .menu-search-title a  {
+.main-title a,
+.lower-nav-header a,
+.lower-nav-links a,
+.footer-links a,
+.more a,
+.center-p a,
+.edspick a,
+.footer-expand-container a,
+.menu-search-title a  {
   text-decoration: none;
   color: inherit;
 }
 
-.main-title a:hover, .footer-links a:hover, .lower-nav-links a:hover, .more-title a:hover, .edspick a:hover  {
+.main-title a:hover,
+.footer-links a:hover,
+.lower-nav-links a:hover,
+.more-title a:hover,
+.edspick a:hover  {
   border-bottom: 1px solid currentColor;
 }
 
-.logo img, .lower-nav-header img{
+.logo img,
+.lower-nav-header img {
   max-width: 225px;
   max-height: 31px;
 }
@@ -129,13 +143,15 @@ body{
   border: none;
 }
 
-.edspick img{
+.edspick img {
   max-width: 75px;
   max-height: 75px;
   margin: 10px 10px 10px 0;
 }
 
-.edpic1, .edpic2, .edpic3 {
+.edpic1,
+.edpic2,
+.edpic3 {
   display: flex;
   align-items: center;
 }
@@ -165,7 +181,8 @@ body{
   align-items: center;
 }
 
-.main-content .author-date ul, .comments ul {
+.comments ul,
+.main-content .author-date ul {
   display: flex;
   font-size: 20px;
   justify-content: space-between;
@@ -190,7 +207,8 @@ body{
   margin: 0;
 }
 
-.inline-links, .center-p a {
+.inline-links,
+.center-p a {
   color: #3280bf;
 }
 
@@ -204,7 +222,7 @@ body{
   margin: auto;
 }
 
-.theory-inflation-section div>p>span {
+.theory-inflation-section div > p > span {
   font-weight: bold;
 }
 
@@ -287,7 +305,8 @@ body{
   grid-area: article-area2;
 }
 
-.main-content2 figure, .article-head figure{
+.main-content2 figure,
+.article-head figure{
   width: 100%;
   margin: auto;
   color: gray;
@@ -309,7 +328,7 @@ body{
   text-align: left;
 }
 
-.end-of-article a{
+.end-of-article a {
   color: gray;
 }
 
@@ -326,7 +345,7 @@ body{
   margin-top: 20px;
 }
 
-.comments button{
+.comments button {
   width: 55%;
 }
 
@@ -334,7 +353,8 @@ body{
   width: 25%;
 }
 
-.main-content p, .main-content2 p {
+.main-content p,
+.main-content2 p {
   font-size: 20px;
   text-align: left;
 }
@@ -353,24 +373,27 @@ body{
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(9, auto);
   grid-gap: 0 5px;
-  grid-template-areas:  "sec-title sec-title sec-title" 
-                        "pic1 pic2 pic3"
-                        "pic1-author pic2-author pic3-author"
-                        "pic1-details pic2-details pic3-details"
-                        "pic1-date pic2-date pic3-date"
-                        "pic4 pic5 pic6"
-                        "pic4-author pic5-author pic6-author"
-                        "pic4-details pic5-details pic6-details"
-                        "pic4-date pic5-date pic6-date";
+  grid-template-areas:  
+    "sec-title sec-title sec-title" 
+    "pic1 pic2 pic3"
+    "pic1-author pic2-author pic3-author"
+    "pic1-details pic2-details pic3-details"
+    "pic1-date pic2-date pic3-date"
+    "pic4 pic5 pic6"
+    "pic4-author pic5-author pic6-author"
+    "pic4-details pic5-details pic6-details"
+    "pic4-date pic5-date pic6-date";
 }
 
-.more_in_space img, .editors-picks-main img {
+.more_in_space img,
+.editors-picks-main img {
   max-width: 273px;
   max-height: 182px;
   margin-top: 20px;
 }
 
-.more_in_space p, .editors-picks-main p {
+.more_in_space p,
+.editors-picks-main p {
   margin: 0;
   padding: 0;
 }
@@ -383,18 +406,33 @@ body{
   grid-area: sec-title;
 }
 
-.author1, .author2, .author3, .author4, .author5, .author6, .author7, .author8, .author9 {
+.author1,
+.author2,
+.author3,
+.author4,
+.author5,
+.author6,
+.author7,
+.author8,
+.author9 {
   color: gray;
   font-size: 13px;
   text-align: right;
 }
 
-.date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9 {
+.date1,
+.date2,
+.date3,
+.date4,
+.date5,
+.date6,
+.date7,
+.date8,
+.date9 {
   color: gray;
   font-size: 13px;
   text-align: left;
 } 
-
 
 .img-1 {
   grid-area: pic1;
@@ -432,7 +470,9 @@ body{
   grid-area: pic3;
 }
 
-.author3, .details3, .date3 {
+.author3,
+.details3,
+.date3 {
   grid-area: pic3-author;
 }
 
@@ -501,11 +541,12 @@ body{
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(4, auto);
   grid-gap: 5px 5px;
-  grid-template-areas:  "editors-pick-title editors-pick-title editors-pick-title" 
-                        "pic7 pic8 pic9"
-                        "pic7-author pic8-author pic9-author"
-                        "pic7-details pic8-details pic9-details"
-                        "pic7-date pic8-date pic9-date";
+  grid-template-areas:
+    "editors-pick-title editors-pick-title editors-pick-title" 
+    "pic7 pic8 pic9"
+    "pic7-author pic8-author pic9-author"
+    "pic7-details pic8-details pic9-details"
+    "pic7-date pic8-date pic9-date";
 }
 
 .editors-picks_main_title {
@@ -611,7 +652,10 @@ body{
   width: 100%;
 }
 
-.lower-nav-links ul, .footer-area ul, .author-date ul, .comments ul {
+.lower-nav-links ul,
+.footer-area ul,
+.author-date ul,
+.comments ul {
   list-style: none;
   padding: 0;
 }
@@ -624,7 +668,7 @@ body{
   line-height: 1.5rem;
 }
 
-.lower-nav-links .list-title-subscribe{
+.lower-nav-links .list-title-subscribe {
   border-left: 1px solid #e2e2e2;
   padding-left: 1.25rem;
 }
