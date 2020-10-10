@@ -237,6 +237,10 @@ body {
   margin: auto;
 }
 
+.fig-container figure > img {
+  width: 100%;
+}
+
 .hr-author hr {
   height: 1px;
   background-color: black;
