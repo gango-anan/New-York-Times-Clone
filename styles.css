@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   padding-top: 2.8rem;
   padding-bottom: 4rem;
@@ -363,6 +363,7 @@ body {
 .more_in_space {
   float: left;
   width: 70%;
+  margin: auto;
   border-top: 1px solid black;
   display: grid;
   grid-template-columns: repeat(3, 33%);
@@ -373,11 +374,9 @@ body {
     "pic1 pic2 pic3"
     "pic1-author pic2-author pic3-author"
     "pic1-details pic2-details pic3-details"
-    "pic1-date pic2-date pic3-date"
     "pic4 pic5 pic6"
     "pic4-author pic5-author pic6-author"
-    "pic4-details pic5-details pic6-details"
-    "pic4-date pic5-date pic6-date";
+    "pic4-details pic5-details pic6-details";
 }
 
 .more_in_space-img,
@@ -394,7 +393,7 @@ body {
 }
 
 .more-p-font {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .more-title {
@@ -440,10 +439,7 @@ body {
 
 .details1 {
   grid-area: pic1-details;
-}
-
-.date1 {
-  grid-area: pic1-date;
+  max-width: 273px;
 }
 
 .img-2 {
@@ -456,28 +452,20 @@ body {
 
 .details2 {
   grid-area: pic2-details;
-}
-
-.date2 {
-  grid-area: pic2-date;
+  max-width: 273px;
 }
 
 .img-3 {
   grid-area: pic3;
 }
 
-.author3,
-.details3,
-.date3 {
+.author3 {
   grid-area: pic3-author;
 }
 
 .details3 {
   grid-area: pic3-details;
-}
-
-.date3 {
-  grid-area: pic3-date;
+  max-width: 273px;
 }
 
 .img-4 {
@@ -490,10 +478,7 @@ body {
 
 .details4 {
   grid-area: pic4-details;
-}
-
-.date4 {
-  grid-area: pic4-date;
+  max-width: 273px;
 }
 
 .img-5 {
@@ -506,10 +491,7 @@ body {
 
 .details5 {
   grid-area: pic5-details;
-}
-
-.date5 {
-  grid-area: pic5-date;
+  max-width: 273px;
 }
 
 .img-6 {
@@ -522,10 +504,7 @@ body {
 
 .details6 {
   grid-area: pic6-details;
-}
-
-.date6 {
-  grid-area: pic6-date;
+  max-width: 273px;
 }
 
 .editors-picks-main {
@@ -541,8 +520,7 @@ body {
     "editors-pick-title editors-pick-title editors-pick-title"
     "pic7 pic8 pic9"
     "pic7-author pic8-author pic9-author"
-    "pic7-details pic8-details pic9-details"
-    "pic7-date pic8-date pic9-date";
+    "pic7-details pic8-details pic9-details";
 }
 
 .editors-picks_main_title {
@@ -559,10 +537,7 @@ body {
 
 .details7 {
   grid-area: pic7-details;
-}
-
-.date7 {
-  grid-area: pic7-date;
+  max-width: 273px;
 }
 
 .img-8 {
@@ -575,10 +550,7 @@ body {
 
 .details8 {
   grid-area: pic8-details;
-}
-
-.date8 {
-  grid-area: pic8-date;
+  max-width: 273px;
 }
 
 .img-9 {
@@ -591,15 +563,12 @@ body {
 
 .details9 {
   grid-area: pic9-details;
-}
-
-.date9 {
-  grid-area: pic9-date;
+  max-width: 273px;
 }
 
 .most_popular {
   float: right;
-  width: 28%;
+  max-width: 25%;
   border-top: 1px solid black;
 }
 
