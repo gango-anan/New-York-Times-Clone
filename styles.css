@@ -78,24 +78,24 @@ body {
   font-weight: bold;
 }
 
+.menu-search-title a,
 .main-title a,
+.center-p a,
+.edspick a,
+.more a,
 .lower-nav-header a,
 .lower-nav-links a,
 .footer-links a,
-.more a,
-.center-p a,
-.edspick a,
-.footer-expand-container a,
-.menu-search-title a {
+.footer-expand-container a {
   text-decoration: none;
   color: inherit;
 }
 
 .main-title a:hover,
-.footer-links a:hover,
-.lower-nav-links a:hover,
+.edspick a:hover,
 .more-title a:hover,
-.edspick a:hover {
+.lower-nav-links a:hover,
+.footer-links a:hover {
   border-bottom: 1px solid currentColor;
 }
 
@@ -109,6 +109,13 @@ body {
   grid-area: article-start;
   width: 70%;
   margin: auto;
+}
+
+.article-head figure,
+.main-content2 figure {
+  width: 100%;
+  margin: auto;
+  color: gray;
 }
 
 .article-title {
@@ -309,15 +316,8 @@ body {
   grid-area: article-area2;
 }
 
-.main-content2 figure,
-.article-head figure{
-  width: 100%;
-  margin: auto;
-  color: gray;
-}
-
 .main-content2 figure > iframe {
-  width: 100%; 
+  width: 100%;
   height: 319px;
   border: 0;
 }
