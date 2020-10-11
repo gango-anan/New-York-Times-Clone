@@ -91,14 +91,6 @@ body {
   color: inherit;
 }
 
-.main-title a:hover,
-.edspick a:hover,
-.more-title a:hover,
-.lower-nav-links a:hover,
-.footer-links a:hover {
-  border-bottom: 1px solid currentColor;
-}
-
 .logo img,
 .lower-nav-header img {
   max-width: 225px;
@@ -377,8 +369,8 @@ body {
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(9, auto);
   grid-gap: 0 5px;
-  grid-template-areas:  
-    "sec-title sec-title sec-title" 
+  grid-template-areas:
+    "sec-title sec-title sec-title"
     "pic1 pic2 pic3"
     "pic1-author pic2-author pic3-author"
     "pic1-details pic2-details pic3-details"
@@ -436,7 +428,7 @@ body {
   color: gray;
   font-size: 13px;
   text-align: left;
-} 
+}
 
 .img-1 {
   grid-area: pic1;
@@ -546,7 +538,7 @@ body {
   grid-template-rows: repeat(4, auto);
   grid-gap: 5px 5px;
   grid-template-areas:
-    "editors-pick-title editors-pick-title editors-pick-title" 
+    "editors-pick-title editors-pick-title editors-pick-title"
     "pic7 pic8 pic9"
     "pic7-author pic8-author pic9-author"
     "pic7-details pic8-details pic9-details"
@@ -724,4 +716,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 65%;
+}
+
+.main-title a:hover,
+.edspick a:hover,
+.more-title a:hover,
+.lower-nav-links a:hover,
+.footer-links a:hover {
+  border-bottom: 1px solid currentColor;
 }
