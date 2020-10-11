@@ -159,21 +159,21 @@ body {
   grid-area: article-area;
 }
 
-.main-content .author {
+.author {
   font-weight: bold;
 }
 
-.main-content .author a {
+.author a {
   text-decoration: none;
   border-bottom: 1.5px solid #e2e2e2;
   color: inherit;
 }
 
-.main-content .author a:hover {
+.author a:hover {
   border: 0;
 }
 
-.main-content .author-date {
+.author-date {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -181,7 +181,7 @@ body {
 }
 
 .comments ul,
-.main-content .author-date ul {
+.author-date ul {
   display: flex;
   font-size: 20px;
   justify-content: space-between;
