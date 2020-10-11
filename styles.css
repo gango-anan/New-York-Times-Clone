@@ -413,6 +413,7 @@ body {
   color: gray;
   font-size: 13px;
   text-align: right;
+  max-width: 273px;
 }
 
 .date1,
