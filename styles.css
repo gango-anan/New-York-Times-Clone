@@ -206,8 +206,7 @@ body {
   margin: 0;
 }
 
-.inline-links,
-.center-p a {
+.inline-links {
   color: #3280bf;
 }
 
@@ -236,7 +235,7 @@ body {
   margin: auto;
 }
 
-.fig-container figure > img {
+.fig-container-img {
   width: 100%;
 }
 
@@ -314,7 +313,7 @@ body {
   border: 0;
 }
 
-.main-content2 .cosmos-jumbo figure > img {
+.cosmos-jumbo-img {
   width: 100%;
 }
 
@@ -324,11 +323,11 @@ body {
   text-align: left;
 }
 
-.end-of-article a {
+.end-of-article-a {
   color: gray;
 }
 
-.end-of-article a:hover {
+.end-of-article-a:hover {
   text-decoration: none;
 }
 
@@ -381,8 +380,8 @@ body {
     "pic4-date pic5-date pic6-date";
 }
 
-.more_in_space img,
-.editors-picks-main img {
+.more_in_space-img,
+.editors-picks-main-img {
   max-width: 273px;
   max-height: 182px;
   margin-top: 20px;
@@ -660,7 +659,7 @@ body {
   font-weight: bold;
 }
 
-.lower-nav-links > ul > li {
+.lower-nav-links-li {
   line-height: 1.5rem;
 }
 
@@ -669,8 +668,8 @@ body {
   padding-left: 1.25rem;
 }
 
-.lower-nav-links > ul > .list-title-educ {
-  list-style-position:inside;
+.list-title-educ {
+  list-style-position: inside;
   border-bottom: 1px solid #e2e2e2;
 }
 
