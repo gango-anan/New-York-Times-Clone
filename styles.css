@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0 auto 0 auto;
-  width: 90%;
+  width: 92%;
   height: 100%;
   padding-top: 2.8rem;
   padding-bottom: 4rem;
@@ -279,7 +279,7 @@ body {
   position: absolute;
   width: 24%;
   left: 0;
-  bottom: 1rem;
+  bottom: 2rem;
 }
 
 .inf6 {
