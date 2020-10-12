@@ -7,27 +7,27 @@ html {
   width: 100%;
 }
 
-body{
-  margin: 0;
-  width: 100%;
+body {
+  margin: 0 auto 0 auto;
+  width: 92%;
   height: 100%;
   padding-top: 2.8rem;
+  padding-bottom: 4rem;
   display: grid;
   grid-template-columns: 28% 44% 28%;
   grid-template-rows: auto;
   grid-gap: 5px;
-  grid-template-areas:  "article-start article-start article-start"
-                        "side-left article-area side-right"
-                        "theory-inflation theory-inflation theory-inflation"
-                        "side-left2 article-area2 side-right2"
-                        "more-section more-section more-section"
-                        "lower-nav lower-nav lower-nav"
-                        "footer footer footer";
- 
+  grid-template-areas:
+    "article-start article-start article-start"
+    "side-left article-area side-right"
+    "theory-inflation theory-inflation theory-inflation"
+    "side-left2 article-area2 side-right2"
+    "more-section more-section more-section"
+    "lower-nav lower-nav lower-nav"
+    "footer footer footer";
 }
 
-/* Main Content */
-.main-header{
+.main-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -54,6 +54,10 @@ body{
   font-size: 1.1875rem;
 }
 
+.small-font {
+  font-size: 13px;
+}
+
 .main-nav {
   height: 100%;
   display: flex;
@@ -74,24 +78,36 @@ body{
   font-weight: bold;
 }
 
-.main-title a, .lower-nav-header a, .lower-nav-links a, .footer-links a, .more a, .center-p a, .edspick a  {
+.menu-search-title a,
+.main-title a,
+.center-p a,
+.edspick a,
+.more a,
+.lower-nav-header a,
+.lower-nav-links a,
+.footer-links a,
+.footer-expand-container a {
   text-decoration: none;
   color: inherit;
 }
 
-.main-title a:hover, .footer-links a:hover, .lower-nav-links a:hover, .more-title a:hover, .edspick a:hover  {
-  border-bottom: 1px solid currentColor;
-}
-
-.logo img, .lower-nav-header img{
+.logo img,
+.lower-nav-header img {
   max-width: 225px;
   max-height: 31px;
 }
 
 .article-head {
   grid-area: article-start;
-  width: 70%;
+  width: 75%;
   margin: auto;
+}
+
+.article-head figure,
+.main-content2 figure {
+  width: 100%;
+  margin: auto;
+  color: gray;
 }
 
 .article-title {
@@ -103,12 +119,14 @@ body{
   font-size: 35px;
   font-style: italic;
   text-align: left;
-  font-family: 'Sansita Swashed', cursive;
-  
 }
 
 .article-head .rick {
   color: gray;
+}
+
+.telescope img {
+  width: 100%;
 }
 
 .edspick {
@@ -124,43 +142,46 @@ body{
   border: none;
 }
 
-.edspick img{
+.edspick img {
   max-width: 75px;
   max-height: 75px;
   margin: 10px 10px 10px 0;
 }
 
-.edpic1, .edpic2, .edpic3 {
+.edpic1,
+.edpic2,
+.edpic3 {
   display: flex;
   align-items: center;
 }
 
 .main-content {
-  grid-area: article-area;  
+  grid-area: article-area;
 }
 
-.main-content .author {
+.author {
   font-weight: bold;
 }
 
-.main-content .author a {
+.author a {
   text-decoration: none;
   border-bottom: 1.5px solid #e2e2e2;
   color: inherit;
 }
 
-.main-content .author a:hover {
+.author a:hover {
   border: 0;
 }
 
-.main-content .author-date {
+.author-date {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main-content .author-date ul, .comments ul {
+.comments ul,
+.author-date ul {
   display: flex;
   font-size: 20px;
   justify-content: space-between;
@@ -185,7 +206,7 @@ body{
   margin: 0;
 }
 
-.inline-links, .center-p a {
+.inline-links {
   color: #3280bf;
 }
 
@@ -195,11 +216,11 @@ body{
 
 .theory-inflation-section {
   grid-area: theory-inflation;
-  width: 70%;
+  width: 75%;
   margin: auto;
 }
 
-.theory-inflation-section div>p>span {
+.theory-inflation-section div > p > span {
   font-weight: bold;
 }
 
@@ -212,6 +233,10 @@ body{
 .fig-container figure {
   width: 100%;
   margin: auto;
+}
+
+.fig-container-img {
+  width: 100%;
 }
 
 .hr-author hr {
@@ -282,10 +307,14 @@ body{
   grid-area: article-area2;
 }
 
-.main-content2 figure, .article-head figure{
+.main-content2 figure > iframe {
   width: 100%;
-  margin: auto;
-  color: gray;
+  height: 319px;
+  border: 0;
+}
+
+.cosmos-jumbo-img {
+  width: 100%;
 }
 
 .end-of-article {
@@ -294,11 +323,11 @@ body{
   text-align: left;
 }
 
-.end-of-article a{
+.end-of-article-a {
   color: gray;
 }
 
-.end-of-article a:hover {
+.end-of-article-a:hover {
   text-decoration: none;
 }
 
@@ -311,7 +340,7 @@ body{
   margin-top: 20px;
 }
 
-.comments button{
+.comments button {
   width: 55%;
 }
 
@@ -319,68 +348,86 @@ body{
   width: 25%;
 }
 
-.main-content p, .main-content2 p {
+.main-content p,
+.main-content2 p {
   font-size: 20px;
   text-align: left;
 }
 
-/* More Section */
 .more {
   grid-area: more-section;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
 .more_in_space {
   float: left;
-  width: 70%;
+  width: 75%;
+  margin: auto;
   border-top: 1px solid black;
   display: grid;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(9, auto);
+  grid-template-rows: repeat(8, auto);
   grid-gap: 0 5px;
-  grid-template-areas:  "sec-title sec-title sec-title" 
-                        "pic1 pic2 pic3"
-                        "pic1-author pic2-author pic3-author"
-                        "pic1-details pic2-details pic3-details"
-                        "pic1-date pic2-date pic3-date"
-                        "pic4 pic5 pic6"
-                        "pic4-author pic5-author pic6-author"
-                        "pic4-details pic5-details pic6-details"
-                        "pic4-date pic5-date pic6-date";
+  grid-template-areas:
+    "sec-title sec-title sec-title"
+    "pic1 pic2 pic3"
+    "pic1-author pic2-author pic3-author"
+    "pic1-details pic2-details pic3-details"
+    "pic4 pic5 pic6"
+    "pic4-author pic5-author pic6-author"
+    "pic4-details pic5-details pic6-details";
 }
 
-.more_in_space img, .editors-picks-main img {
+.more_in_space-img,
+.editors-picks-main-img {
   max-width: 273px;
   max-height: 182px;
   margin-top: 20px;
 }
 
-.more_in_space p, .editors-picks-main p {
+.more_in_space p,
+.editors-picks-main p {
   margin: 0;
   padding: 0;
 }
 
 .more-p-font {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .more-title {
   grid-area: sec-title;
 }
 
-.author1, .author2, .author3, .author4, .author5, .author6, .author7, .author8, .author9 {
+.author1,
+.author2,
+.author3,
+.author4,
+.author5,
+.author6,
+.author7,
+.author8,
+.author9 {
   color: gray;
   font-size: 13px;
   text-align: right;
+  max-width: 273px;
 }
 
-.date1, .date2, .date3, .date4, .date5, .date6, .date7, .date8, .date9 {
+.date1,
+.date2,
+.date3,
+.date4,
+.date5,
+.date6,
+.date7,
+.date8,
+.date9 {
   color: gray;
   font-size: 13px;
   text-align: left;
-} 
-
+}
 
 .img-1 {
   grid-area: pic1;
@@ -392,10 +439,7 @@ body{
 
 .details1 {
   grid-area: pic1-details;
-}
-
-.date1 {
-  grid-area: pic1-date;
+  max-width: 273px;
 }
 
 .img-2 {
@@ -408,26 +452,20 @@ body{
 
 .details2 {
   grid-area: pic2-details;
-}
-
-.date2 {
-  grid-area: pic2-date;
+  max-width: 273px;
 }
 
 .img-3 {
   grid-area: pic3;
 }
 
-.author3, .details3, .date3 {
+.author3 {
   grid-area: pic3-author;
 }
 
 .details3 {
   grid-area: pic3-details;
-}
-
-.date3 {
-  grid-area: pic3-date;
+  max-width: 273px;
 }
 
 .img-4 {
@@ -440,10 +478,7 @@ body{
 
 .details4 {
   grid-area: pic4-details;
-}
-
-.date4 {
-  grid-area: pic4-date;
+  max-width: 273px;
 }
 
 .img-5 {
@@ -456,10 +491,7 @@ body{
 
 .details5 {
   grid-area: pic5-details;
-}
-
-.date5 {
-  grid-area: pic5-date;
+  max-width: 273px;
 }
 
 .img-6 {
@@ -472,26 +504,23 @@ body{
 
 .details6 {
   grid-area: pic6-details;
-}
-
-.date6 {
-  grid-area: pic6-date;
+  max-width: 273px;
 }
 
 .editors-picks-main {
   float: left;
-  width: 70%;
+  width: 75%;
   border-top: 1px solid black;
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(4, auto);
   grid-gap: 5px 5px;
-  grid-template-areas:  "editors-pick-title editors-pick-title editors-pick-title" 
-                        "pic7 pic8 pic9"
-                        "pic7-author pic8-author pic9-author"
-                        "pic7-details pic8-details pic9-details"
-                        "pic7-date pic8-date pic9-date";
+  grid-template-areas:
+    "editors-pick-title editors-pick-title editors-pick-title"
+    "pic7 pic8 pic9"
+    "pic7-author pic8-author pic9-author"
+    "pic7-details pic8-details pic9-details";
 }
 
 .editors-picks_main_title {
@@ -508,10 +537,7 @@ body{
 
 .details7 {
   grid-area: pic7-details;
-}
-
-.date7 {
-  grid-area: pic7-date;
+  max-width: 273px;
 }
 
 .img-8 {
@@ -524,10 +550,7 @@ body{
 
 .details8 {
   grid-area: pic8-details;
-}
-
-.date8 {
-  grid-area: pic8-date;
+  max-width: 273px;
 }
 
 .img-9 {
@@ -540,15 +563,12 @@ body{
 
 .details9 {
   grid-area: pic9-details;
-}
-
-.date9 {
-  grid-area: pic9-date;
+  max-width: 273px;
 }
 
 .most_popular {
   float: right;
-  width: 28%;
+  max-width: 23%;
   border-top: 1px solid black;
 }
 
@@ -561,7 +581,7 @@ body{
   font-weight: 100;
 }
 
-.more:after {
+.more::after {
   content: "";
   height: 0;
   display: block;
@@ -569,10 +589,9 @@ body{
   visibility: hidden;
 }
 
-/* Lower Navigation Section */
 .lower-navigation-section {
   border-top: 2px solid #e2e2e2;
-  width: 90%;
+  width: 95%;
   margin: 20px auto auto auto;
   grid-area: lower-nav;
 }
@@ -598,7 +617,10 @@ body{
   width: 100%;
 }
 
-.lower-nav-links ul, .footer-area ul, .author-date ul, .comments ul {
+.lower-nav-links ul,
+.footer-area ul,
+.author-date ul,
+.comments ul {
   list-style: none;
   padding: 0;
 }
@@ -607,27 +629,25 @@ body{
   font-weight: bold;
 }
 
-.lower-nav-links > ul >li {
+.lower-nav-links-li {
   line-height: 1.5rem;
 }
 
-.lower-nav-links .list-title-subscribe{
+.lower-nav-links .list-title-subscribe {
   border-left: 1px solid #e2e2e2;
-  /* margin-left: 2.5rem; */
   padding-left: 1.25rem;
 }
 
-.lower-nav-links > ul > .list-title-educ {
-  list-style-position:inside;
+.list-title-educ {
+  list-style-position: inside;
   border-bottom: 1px solid #e2e2e2;
 }
 
-/* Main Footer */
 .footer-area {
   border-top: 1px solid #e2e2e2;
   color: gray;
   grid-area: footer;
-  width: 90%;
+  width: 95%;
   margin: auto;
   font-size: 0.8125rem;
   padding: 10px 0 25px 0;
@@ -642,6 +662,35 @@ body{
 }
 
 .footer-links li {
-  /* margin: 0 0.5rem; */
   margin: auto;
+}
+
+.footer-expand {
+  grid-area: footer-expand;
+  position: fixed;
+  height: 4rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-expand-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.main-title a:hover,
+.edspick a:hover,
+.more-title a:hover,
+.lower-nav-links a:hover,
+.footer-links a:hover {
+  border-bottom: 1px solid currentColor;
 }
